@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity(name="usuario")
 public class Usuario {
@@ -17,6 +19,10 @@ public class Usuario {
 	private String login;
 	private String senha;
 	private String email;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="id_papel")
+	private Papel papel;
 	
 	public long getId() {
 		return id;
