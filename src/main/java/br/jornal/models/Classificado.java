@@ -2,7 +2,20 @@ package br.jornal.models;
 
 import java.sql.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity(name="classificado")
 public class Classificado {
+
+	@Id
+	@Column(nullable=false)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	private String titulo;
 	private String texto;
@@ -10,7 +23,11 @@ public class Classificado {
 	private String telefone;
 	private float melhor_oferta;
 	private Date data_oferta;
-	private long id_autor;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="id_autor")
+	private Usuario autor;
+	
 	public long getId() {
 		return id;
 	}
@@ -53,11 +70,13 @@ public class Classificado {
 	public void setData_oferta(Date data_oferta) {
 		this.data_oferta = data_oferta;
 	}
-	public long getId_autor() {
-		return id_autor;
+	
+	public Usuario getAutor() {
+		return autor;
 	}
-	public void setId_autor(long id_autor) {
-		this.id_autor = id_autor;
+	
+	public void setAutor(Usuario autor) {
+		this.autor = autor;
 	}
 	
 	
