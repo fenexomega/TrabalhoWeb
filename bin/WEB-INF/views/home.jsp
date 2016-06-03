@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<div class="container" id="news-container">
+	</div>
 </body>
 </html>
