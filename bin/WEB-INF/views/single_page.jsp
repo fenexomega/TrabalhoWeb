@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cyber Tech:Home</title>
+    <title>Cyber Tech:Single page</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
           </button>
 		  
           <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
-          
+		  
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav custom_nav">
@@ -76,10 +76,7 @@
             <li><a href="#">Tablets</a></li> 
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="404.html">404 Page</a></li>
-          </ul>           
-          <ul class="nav navbar-nav navbar-right custom_nav">
-          	<li><a href="loginFormulario">Login</a></li>
-          </ul>
+          </ul>         
           
         </div><!--/.nav-collapse -->
         <div class="search">
@@ -91,11 +88,11 @@
       </div>
     </nav>
   </header>
-  <!-- End header -->  
+  <!-- End header -->
   <!-- start content section -->
   <section id="content">
-  
-    <!-- start top add place  -->
+    <div class="container">
+      <!-- start top add place  -->
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="topadd_bar">
@@ -103,54 +100,7 @@
           </div>
         </div>
       </div> 
-      <!-- End top add place  -->  
-  
-  
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-				<!-- start featured slider -->
-				<div class="featured_slider">
-				   <!-- Set up your HTML -->
-				   <h2 class="featured_title">On Featured</h2>
-				  <div class="slick_slider">
-					<div class="single_iteam">
-					  <img src="img/300x250.jpg" alt="img">
-					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					<div class="single_iteam">
-					  <img src="img/300x250x2.jpg" alt="img">
-					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					<div class="single_iteam">
-					  <img src="img/300x250x3.jpg" alt="img">
-					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					<div class="single_iteam">
-					  <img src="img/300x250x4.jpg" alt="img">
-					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					
-					<div class="single_iteam">
-					  <img src="img/300x250x5.jpg" alt="img">
-					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					<div class="single_iteam">
-					  <img src="img/300x250x6.jpg" alt="img">
-					  <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					<div class="single_iteam">
-					  <img src="img/300x250x3.jpg" alt="img">
-					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>
-					<div class="single_iteam">
-					  <img src="img/300x250x5.jpg" alt="img">
-					   <h2><a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a></h2>
-					</div>					
-				  </div>
-				</div><!-- End featured slider -->
-        </div>
-      </div>  
-    <div class="container">	  
+      <!-- End top add place  -->
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-4">
           <div class="left_sidebar">
@@ -178,7 +128,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="#">It’s Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -186,7 +136,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="#">It’s Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -228,7 +178,7 @@
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
                     </div>
                   </div>
                 </li>
@@ -238,13 +188,13 @@
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
                     </div>
                   </div>
                 </li>
                   <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
@@ -254,62 +204,62 @@
                 </li>
                 <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                        
                     </div>
                   </div>
                 </li>
                  <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
                     </div>
                   </div>
                 </li>
                   <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
                     </div>
                   </div>
                 </li>
                   <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                         
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
                       
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
                     </div>
                   </div>
                 </li>                     
@@ -319,96 +269,148 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-8">
           <div class="middle_content">
-            <h2>What’s Hot</h2>
+            <ol class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Technology</a></li>
+              <li class="active">Mobile</li>
+            </ol>        
+            <div class="single_page_area">
+              <h1>Get $50 Off Any Tablet Priced $150 Or More</h1>
+              <div class="post_commentbox">
+                <a href="#"><i class="fa fa-user"></i>Wpfreeware</a>
+                <span><i class="fa fa-calendar"></i>6:49 AM</span>
+                <a href="#"><i class="fa fa-tags"></i>Technology</a>
+              </div>
+              <div class="single_content">
+                <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
+                <blockquote>Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.</blockquote>
+                <p> Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
+                <ul>
+                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
+                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
+                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
+                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
+                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
+                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
+                </ul>
+                 <p> Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
+                <h1>This is h1 content </h1>
+                <h2>This is h2 content </h2>
+                <h3>This is h3 content </h3>
+                <h4>This is h4 content </h4>
+                <h5>This is h5 content </h5>
+                <h6>This is h6 content </h6>
+                <button class="btn default-btn">Default</button>
+                <button class="btn btn-red">Red Button</button>
+                <button class="btn btn-yellow">Yellow Button</button>
+                <button class="btn btn-green">Green Button</button>
+                <button class="btn btn-black">Black Button</button>
+                <button class="btn btn-orange">Orange Button</button>
+                <button class="btn btn-blue">Blue Button</button>
+                <button class="btn btn-lime">Lime Button</button>
+              </div>
+              
+            </div>  
 
-            <!-- start featured post -->
-            <ul class="featured_nav">
-              <li class="wow fadeInDown">
-                <figure class="featured_img">
-                    <a href="#"><img src="img/550x400.jpg" alt="img"></a>
-                </figure>
-                <article class="featured_article">
-                  <div class="article_category">
-                    <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Samsung</a>
+          </div>
+          <div class="social_link">
+            <ul class="social_nav">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+          </div> 
+          <div class="related_post">
+            <h2>Related Post <i class="fa fa-thumbs-o-up"></i></h2>
+            <ul class="ppost_nav wow fadeInDown">
+                <li>
+                  <div class="media">
+                    <a href="single_page.html" class="media-left">
+                      <img alt="img" src="img/70x70.jpg">
+                    </a>
+                    <div class="media-body">
+                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                        
+                    </div>
                   </div>
-                  <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                </article>
-              </li>
-              <li class="wow fadeInDown">
-                <figure class="featured_img">
-                    <a href="#"><img src="img/550x400.jpg" alt="img"></a>
-                </figure>
-                <article class="featured_article">
-                  <div class="article_category">
-                    <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Samsung</a>
+                </li>
+                 <li>
+                  <div class="media">
+                    <a href="single_page.html" class="media-left">
+                      <img alt="img" src="img/70x70.jpg">
+                    </a>
+                    <div class="media-body">
+                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
+                    </div>
                   </div>
-                  <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                </article>
-              </li>
-              <li class="wow fadeInDown">
-                <figure class="featured_img">
-                    <a href="#"><img src="img/550x400.jpg" alt="img"></a>
-                </figure>
-                <article class="featured_article">
-                  <div class="article_category">
-                    <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Samsung</a>
+                </li>
+                <li>
+                  <div class="media">
+                    <a href="single_page.html" class="media-left">
+                      <img alt="img" src="img/70x70.jpg">
+                    </a>
+                    <div class="media-body">
+                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
+                    </div>
                   </div>
-                  <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                </article>
-              </li>
-              <li class="wow fadeInDown">
-                <figure class="featured_img">
-                    <a href="#"><img src="img/550x400.jpg" alt="img"></a>
-                </figure>
-                <article class="featured_article">
-                  <div class="article_category">
-                    <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Samsung</a>
+                </li>
+				
+                <li>
+                  <div class="media">
+                    <a href="single_page.html" class="media-left">
+                      <img alt="img" src="img/70x70.jpg">
+                    </a>
+                    <div class="media-body">
+                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                        
+                    </div>
                   </div>
-                  <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                </article>
-              </li>
-              <li class="wow fadeInDown">
-                <figure class="featured_img">
-                    <a href="#"><img src="img/550x400.jpg" alt="img"></a>
-                </figure>
-                <article class="featured_article">
-                  <div class="article_category">
-                    <a href="#">Technology <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Mobile  <i class="fa fa-angle-right"></i></a>
-                    <a href="#">Samsung</a>
+                </li>
+                 <li>
+                  <div class="media">
+                    <a href="single_page.html" class="media-left">
+                      <img alt="img" src="img/70x70.jpg">
+                    </a>
+                    <div class="media-body">
+                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
+                    </div>
                   </div>
-                  <h2 class="article_titile"><a href="single_page.html">Apple iPad Production Reaches 4 Million</a></h2>
-                  <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
-                </article>
-              </li>
-            </ul><!-- End featured post -->
-            <!-- start post pagination -->
-            <nav>
-              <ul class="pagination">
-                <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                </li>
+                <li>
+                  <div class="media">
+                    <a href="single_page.html" class="media-left">
+                      <img alt="img" src="img/70x70.jpg">
+                    </a>
+                    <div class="media-body">
+                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
+                    </div>
+                  </div>
+                </li>				
+                  
+                                     
               </ul>
-            </nav>
-            <!-- End post pagination -->
           </div>
         </div>
+         <!-- start post pagination -->
+        <nav class="nav-growpop">
+          <a class="prev" href="#">
+            <span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
+            <div>
+              <span>Previous Story</span>
+              <h3>Child full of grace saviour of the human race</h3>
+              <img src="http://lorempixel.com/100/100/" alt="Previous thumb"/>
+            </div>
+          </a>
+          <a class="next" href="#">
+            <span class="icon-wrap"><i class="fa fa-angle-right"></i></svg></span>
+            <div>
+              <span>Next Story</span>
+              <h3>Ancient rulage of grains and the trees of the night</h3>
+              <img src="http://lorempixel.com/100/100/" alt="Next thumb"/>
+            </div>
+          </a>
+        </nav>
+        <!-- End post pagination -->
         <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="right_sidebar">
             <!-- start single widget -->
@@ -431,7 +433,7 @@
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
                     </div>
                   </div>
                 </li>
@@ -441,7 +443,7 @@
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
                     </div>
                   </div>
                 </li>
@@ -451,13 +453,13 @@
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                         
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
@@ -467,52 +469,52 @@
                 </li>
                  <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
                     </div>
                   </div>
                 </li>
                   <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
                     </div>
                   </div>
                 </li>
                   <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                         
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
                       
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="media">
-                    <a class="media-left" href="#">
+                    <a class="media-left" href="single_page.html">
                       <img src="img/70x70.jpg" alt="img">
                     </a>
                     <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
+                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
                     </div>
                   </div>
                 </li>                     
