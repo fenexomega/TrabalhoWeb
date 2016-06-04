@@ -20,10 +20,11 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
-  	compile 'org.hibernate:hibernate-core:5.1.0.Final'
 	compile 'org.springframework.boot:spring-boot-starter-web'
-	compile 'org.springframework.boot:spring-boot-starter-actuator'
 	compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	
 	compile 'javax.servlet:jstl'	
 	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
 	compile group: 'commons-io', name: 'commons-io', version: '2.4'
