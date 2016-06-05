@@ -1,4 +1,4 @@
-package br.jornal.dao;
+package br.jornal.dao.interfaces;
 
 import java.util.List;
 
@@ -9,4 +9,6 @@ import br.jornal.models.Usuario;
 public interface IUsuarioDAO extends JpaRepository<Usuario, Long> {
 
 	public List<Usuario> findByLoginLike(String login);
+	
+	public List<Usuario> findByEmailLike(String email);
 }

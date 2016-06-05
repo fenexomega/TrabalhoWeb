@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity(name="noticia")
 public class Noticia {
@@ -18,10 +20,20 @@ public class Noticia {
 	private String titulo;
 	private String subtitulo;
 	private String texto;
-	private long id_autor;
-	private Date data_noticia;
-	private long id_sessao;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="id_autor")
+	private Usuario autor;
+	
+	@Column(name="data_noticia")
+	private Date dataNoticia;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="id_secao")
+	private Secao secao;
 	private boolean ativa;
+	private String imagePath;
+	
 	public long getId() {
 		return id;
 	}
@@ -46,23 +58,13 @@ public class Noticia {
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-	public long getId_autor() {
-		return id_autor;
+
+
+	public Date getDataNoticia() {
+		return dataNoticia;
 	}
-	public void setId_autor(long id_autor) {
-		this.id_autor = id_autor;
-	}
-	public Date getData_noticia() {
-		return data_noticia;
-	}
-	public void setData_noticia(Date data_noticia) {
-		this.data_noticia = data_noticia;
-	}
-	public long getId_sessao() {
-		return id_sessao;
-	}
-	public void setId_sessao(long id_sessao) {
-		this.id_sessao = id_sessao;
+	public void setDataNoticia(Date dataNoticia) {
+		this.dataNoticia = dataNoticia;
 	}
 	public boolean isAtiva() {
 		return ativa;
@@ -70,7 +72,24 @@ public class Noticia {
 	public void setAtiva(boolean ativa) {
 		this.ativa = ativa;
 	}
+	public String getImagePath() {
+		return imagePath;
+	}
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
 	
-	
+	public Usuario getAutor() {
+		return autor;
+	}
+	public void setAutor(Usuario autor) {
+		this.autor = autor;
+	}
+	public Secao getSecao() {
+		return secao;
+	}
+	public void setSecao(Secao secao) {
+		this.secao = secao;
+	}
 	
 }

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -61,8 +62,10 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav custom_nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Technology</a></li>            
-            <li class="dropdown">
+            <c:forEach items="${ secoes }" var="secao">
+            	<li><a href="secao?id=${ secao.id }">${ secao.titulo }</a></li>
+            </c:forEach>
+          <!--  <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Android</a></li>
@@ -71,9 +74,7 @@
                 <li><a href="#">Walton Mobile</a></li>
                 <li><a href="#">Sympony</a></li>               
               </ul>
-            </li>
-            <li><a href="#">Laptops</a></li> 
-            <li><a href="#">Tablets</a></li> 
+            </li>  --> 
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="404.html">404 Page</a></li>
           </ul>           
