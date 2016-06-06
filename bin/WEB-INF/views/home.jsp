@@ -2,117 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cyber Tech:Home</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- for fontawesome icon css file -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- for content animate css file -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- google fonts  -->
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>   
-   <link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
-     <!-- slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet">     
-    <!-- <link href="css/theme-red.css" rel="stylesheet">    -->
-     <link href="css/theme.css" rel="stylesheet">
-    <!-- main site css file -->    
-    <link href="style.css" rel="stylesheet">
- 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <%@include file="common/metatags.jsp" %> 
   </head>
 <body>
-  <!-- =========================
-    //////////////This Theme Design and Developed //////////////////////
-    //////////// by www.wpfreeware.com======================-->
-
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="status">&nbsp;</div>
-  </div>
-  <!-- End Preloader -->
-   
-  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-  <!-- start header -->
-  <header id="header">
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-		  
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
-          
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav custom_nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <c:forEach items="${ secoes }" var="secao">
-            	<li><a href="secao?id=${ secao.id }">${ secao.titulo }</a></li>
-            </c:forEach>
-          <!--  <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Android</a></li>
-                <li><a href="#">Samsung</a></li>
-                <li><a href="#">Nokia</a></li>
-                <li><a href="#">Walton Mobile</a></li>
-                <li><a href="#">Sympony</a></li>               
-              </ul>
-            </li>  --> 
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="404.html">404 Page</a></li>
-          </ul>           
-          <ul class="nav navbar-nav navbar-right custom_nav">
-          	<li><a href="loginFormulario">Login</a></li>
-          </ul>
-          
-        </div><!--/.nav-collapse -->
-        <div class="search">
-            <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
-            <form action="">
-              <input class="search_bar" type="text" placeholder="Search here">
-            </form>
-          </div>
-      </div>
-    </nav>
-  </header>
-  <!-- End header -->  
-  <!-- start content section -->
-  <section id="content">
-  
-    <!-- start top add place  -->
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="topadd_bar">
-            <a href="#"><img src="img/addbanner_728x90_V1.jpg" alt="img"></a>
-          </div>
-        </div>
-      </div> 
-      <!-- End top add place  -->  
-  
+	<%@include file="common/navbar.jsp" %>
   
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
 				<!-- start featured slider -->
 				<div class="featured_slider">
 				   <!-- Set up your HTML -->
-				   <h2 class="featured_title">On Featured</h2>
+				   <h2 class="featured_title">Em destaque</h2>
 				  <div class="slick_slider">
 					<div class="single_iteam">
 					  <img src="img/300x250.jpg" alt="img">
@@ -157,7 +57,7 @@
           <div class="left_sidebar">
             <!-- start single widget -->
             <div class="single_widget">
-              <h2>Post of the month</h2>
+              <h2>Classificados</h2>
               <ul class="post_nav">
                 <li>
                   <figure class="effect-lily">

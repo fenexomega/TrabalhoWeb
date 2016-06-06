@@ -24,5 +24,10 @@ public class MainController {
 		return "home";
 	}
 	
+	@RequestMapping("/index.html")
+	public String index()
+	{
+		return "redirect:/";
+	}
 	
 }
