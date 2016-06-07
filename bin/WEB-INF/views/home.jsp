@@ -1,12 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <title>Jornal jornal:Home</title>
   <%@include file="common/metatags.jsp" %> 
   </head>
 <body>
 	<%@include file="common/navbar.jsp" %>
-  
+ 
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
 				<!-- start featured slider -->
@@ -63,7 +65,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -71,7 +73,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -79,7 +81,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -87,7 +89,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -95,7 +97,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -103,7 +105,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -220,7 +222,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-8">
           <div class="middle_content">
-            <h2>What’s Hot</h2>
+            <h2>Whatâs Hot</h2>
 
             <!-- start featured post -->
             <ul class="featured_nav">

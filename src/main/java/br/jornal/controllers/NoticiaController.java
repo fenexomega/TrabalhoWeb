@@ -1,56 +1,49 @@
 package br.jornal.controllers;
 
-import java.util.List;
-
 import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import br.jornal.dao.interfaces.ISecaoDAO;
-import br.jornal.models.Secao;
-import br.jornal.models.Usuario;
+import br.jornal.dao.interfaces.INoticiasDAO;
+import br.jornal.models.Noticia;
 import br.jornal.util.AulaFileUtil;
 
 @Controller
-public class MainController {
-
+public class NoticiaController {
+	
 	@Autowired
-	private ISecaoDAO secaoDAO;
+	private INoticiasDAO noticiasDAO;
 	
 	@Autowired
 	private ServletContext servletContext;
+
 	
-	@RequestMapping("/")
-	public String home(Model model)
+	@RequestMapping("/inserirNoticiaForm")
+	public String insertNoticiaFormulario()
 	{
-		List<Secao> secoes = secaoDAO.findAll(); 
-		model.addAttribute("secoes", secoes);
-		return "home";
+		return "noticia/inserir_noticia_formulario";
 	}
 	
-	@RequestMapping("/index.html")
-	public String index()
+	@RequestMapping(value="/inserirNoticia",method=RequestMethod.POST)
+	public String insertNoticia(Noticia noticia,
+			@RequestParam(value="image",required=true) MultipartFile image)
 	{
-		return "redirect:/";
-	}
 	
-	public String inserirImagem(Usuario user,
-			@RequestParam(value="image",required=false) MultipartFile image)
-	{
+		noticia = noticiasDAO.saveAndFlush(noticia);
+		
 		if(image != null && image.isEmpty() == false)
 		{
 			String extension = image.getOriginalFilename().split("\\.")[1];
-			String pathname = servletContext.getRealPath("/") + "images/" + user.getId()
+			String pathname = servletContext.getRealPath("/") + "images/" + noticia.getId()
 			+ extension;
 			
 			AulaFileUtil.saveImage(pathname, image);
 		}
-		return "";
+		return "redirect:/home";
 	}
-	
 }
