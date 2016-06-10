@@ -46,7 +46,7 @@
             <li><a href="404.html">404 Page</a></li>
           </ul>           
           <ul class="nav navbar-nav navbar-right custom_nav">
-          	<li><a href="loginFormulario">Login</a></li>
+          	<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
           </ul>
           
         </div><!--/.nav-collapse -->
@@ -72,4 +72,20 @@
         </div>
       </div> 
       <!-- End top add place  -->  
+      
+       <div class="modal fade container" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	   <div class="modal-dialog jumbotron">
+				<form action="" method="post">
+					<fieldset class="form-grup">
+						<label for="inputEmail">Endereço de e-mail</label>
+						<input type="email" class="form-control" id="email" placeholder="Digite o E-mail">
+					</fieldset>
+					<fieldset class="form-grup">
+						<label for="inputPassword">Senha</label>
+						<input type="password" class="form-control" id="password" placeholder="Digite a senha">
+					</fieldset>
+					<button type="submit" class="btn btn-primary">Submeter</button>
+				</form>
+			</div>
+		</div>
   

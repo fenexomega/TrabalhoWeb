@@ -53,4 +53,10 @@ public class MainController {
 		return "";
 	}
 	
+	@RequestMapping("/404")
+	public String notFound()
+	{
+		return "404";
+	}
+	
 }
