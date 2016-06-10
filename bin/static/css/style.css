@@ -16,6 +16,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
         //////////// by www.wpfreeware.com======================-->*/
 
 
+.button_down
+{
+	margin-top: 2%;
+}
+
+.form_group {
+	min-width: 100%;
+	padding: 10px;
+	min-height: 100vh;
+	margin-bottom: 0;
+	display: flex;
+	 -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+    justify-content : center;
+}
+
 .allign-right
 {
 	text-align: right;

@@ -4,6 +4,7 @@
 <html>
 <head>
   <%@include file="common/metatags.jsp" %> 
+  <link href="css/formularioLogin.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>

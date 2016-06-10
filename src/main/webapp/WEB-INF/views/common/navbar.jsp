@@ -63,28 +63,22 @@
   <!-- start content section -->
   <section id="content">
   
-    <!-- start top add place  -->
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="topadd_bar">
-            <a href="#"><img src="img/addbanner_728x90_V1.jpg" alt="img"></a>
-          </div>
-        </div>
-      </div> 
+
       <!-- End top add place  -->  
       
        <div class="modal fade container" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	   <div class="modal-dialog jumbotron">
 				<form action="" method="post">
-					<fieldset class="form-grup">
-						<label for="inputEmail">Endereço de e-mail</label>
-						<input type="email" class="form-control" id="email" placeholder="Digite o E-mail">
+					<fieldset class="form-group">
+						<label for="inputLogin">Login</label>
+						<input type="text" class="form-control" id="login" placeholder="Login">
 					</fieldset>
-					<fieldset class="form-grup">
+					<fieldset class="form-group">
 						<label for="inputPassword">Senha</label>
-						<input type="password" class="form-control" id="password" placeholder="Digite a senha">
+						<input type="password" class="form-control" id="password" placeholder="Senha">
 					</fieldset>
-					<button type="submit" class="btn btn-primary">Submeter</button>
+					<a href="/Cadastro" class="btn btn-success" role="button">Realizar Cadastro</a>
+					<button type="submit" class="btn btn-primary pull-right">Logar</button>
 				</form>
 			</div>
 		</div>
