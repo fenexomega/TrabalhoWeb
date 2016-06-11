@@ -37,12 +37,18 @@ public class UsuarioController {
 	{
 		System.out.println("Entrou aqui");
 		String senha = request.getParameter("senha");
-//		String confirmacaoSenha = request.getParameter("confirmacaoSenha");
+		String confirmacaoSenha = request.getParameter("confirmacaoSenha");
 		
-//		if(senha != confirmacaoSenha)
-//		{
-//			return "redirect:Cadastro";
-//		}
+		if(result.hasFieldErrors())
+		{
+			return "cadastro";
+		}
+		
+		if(!senha.equals(confirmacaoSenha))
+		{
+			System.out.println("Senhas não conferem: '" + senha + "' e '" + confirmacaoSenha + "'.");
+			return "redirect:Cadastro";
+		}
 		
 		
 		System.out.println(usuario.getEmail());

@@ -19,21 +19,21 @@ public class Usuario {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
-	@NotNull
+	@NotNull(message="{usuario.nome}")
 	private String nome;
 	
 	
 	@Column(unique=true)
-	@NotNull
-	@Size(min=5,max=30)
+	@NotNull(message="{usuario.login}")
+	@Size(min=5,max=32,message="{usuario.login}")
 	private String login;
 	
-	@NotNull
-	@Size(min=32,max=32)
+	@NotNull(message="{usuario.senha}")
+	@Size(min=5,max=32,message="{usuario.senha}")
 	private String senha;
 	
 	@Column(unique=true)
-	@NotNull
+	@NotNull(message="{usuario.email}")
 	private String email;
 	
 	@ManyToOne(optional=false)
