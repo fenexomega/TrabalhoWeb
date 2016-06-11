@@ -3,6 +3,7 @@ package br.jornal.controllers;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
@@ -12,10 +13,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import br.jornal.dao.interfaces.IPapelDAO;
 import br.jornal.dao.interfaces.IUsuarioDAO;
 import br.jornal.models.Usuario;
+import br.jornal.util.AulaFileUtil;
 
 @Controller
 public class UsuarioController {
@@ -26,16 +30,19 @@ public class UsuarioController {
 	@Autowired
 	private IPapelDAO papelDAO;
 	
+	@Autowired
+	private ServletContext servletContext;
+	
 	@RequestMapping("/Cadastro")
 	public String cadastrarUsuarioFormulario()
 	{
 		return "cadastro";
 	}
 	
-	@RequestMapping(value="/CadastrarUsuario",method=RequestMethod.POST)
-	public String cadastrarUsuario(@Valid Usuario usuario, BindingResult result, HttpServletRequest request)
+	@RequestMapping(value="/CadastrarUsuario", method=RequestMethod.POST)
+	public String cadastrarUsuario(@Valid Usuario usuario, BindingResult result,
+			@RequestParam(value="imagem",required=true) MultipartFile imagem, HttpServletRequest request)
 	{
-		System.out.println("Entrou aqui");
 		String senha = request.getParameter("senha");
 		String confirmacaoSenha = request.getParameter("confirmacaoSenha");
 		
@@ -44,9 +51,8 @@ public class UsuarioController {
 			return "cadastro";
 		}
 		
-		if(!senha.equals(confirmacaoSenha))
+		if(senha.equals(confirmacaoSenha) == false)
 		{
-			System.out.println("Senhas não conferem: '" + senha + "' e '" + confirmacaoSenha + "'.");
 			return "redirect:Cadastro";
 		}
 		
@@ -56,7 +62,14 @@ public class UsuarioController {
 			byte[] digest = MessageDigest.getInstance("MD5").digest(usuario.getSenha().getBytes());
 			usuario.setSenha(MD5Encoder.encode(digest));
 			usuario.setPapel(papelDAO.findByPapelLike("usuario"));
-			usuarioDAO.save(usuario);
+			usuario = usuarioDAO.save(usuario);
+			
+			//salvar imagem
+			if(imagem != null)
+			{
+				String pathname = servletContext.getRealPath("/") + "images/" + usuario.getId() + ".png";
+				AulaFileUtil.saveImage(pathname, imagem);
+			}
 			
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block

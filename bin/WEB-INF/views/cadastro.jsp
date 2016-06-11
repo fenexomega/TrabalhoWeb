@@ -14,7 +14,7 @@
 <body>
 	<div class="form_group container ">
 		<div class="jumbotron">
-			<form action="/CadastrarUsuario" method="post">
+			<form action="/CadastrarUsuario" method="POST" enctype="multipart/form-data">
 				<fieldset class="form-group">
 					<label for="inputNome">Nome</label>
 					<input type="text" class="form-control" name="nome" placeholder="Digite seu Nome">
@@ -39,6 +39,10 @@
 					<label for="passwordConfirm">Confirmar senha</label>
 					<input type="password" class="form-control" name="confirmacaoSenha" placeholder="Digite a senha">
 				</fieldset>		
+				<fieldset class="form-group">
+					<label for="inputImage" >Imagem de perfil</label>
+					<input type="file"  name="imagem" >
+				</fieldset>
 				<button type="submit" class="btn btn-primary pull-right">Submeter</button>
 				<a class="btn btn-danger pull-left" role="button" href="/" >Voltar</a>
 			</form>
