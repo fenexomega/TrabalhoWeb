@@ -7,6 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.UniqueConstraint;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity(name="usuario")
 public class Usuario {
@@ -14,10 +17,23 @@ public class Usuario {
 	@Id
 	@Column(nullable=false)
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long id; 
+	private long id;
+	
+	@NotNull
 	private String nome;
+	
+	
+	@Column(unique=true)
+	@NotNull
+	@Size(min=5,max=30)
 	private String login;
+	
+	@NotNull
+	@Size(min=32,max=32)
 	private String senha;
+	
+	@Column(unique=true)
+	@NotNull
 	private String email;
 	
 	@ManyToOne(optional=false)
@@ -26,6 +42,12 @@ public class Usuario {
 	
 	public long getId() {
 		return id;
+	}
+	public Papel getPapel() {
+		return papel;
+	}
+	public void setPapel(Papel papel) {
+		this.papel = papel;
 	}
 	public void setId(long id) {
 		this.id = id;

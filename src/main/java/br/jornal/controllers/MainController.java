@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import br.jornal.dao.interfaces.INoticiasDAO;
 import br.jornal.dao.interfaces.ISecaoDAO;
+import br.jornal.models.Noticia;
 import br.jornal.models.Secao;
 import br.jornal.models.Usuario;
 import br.jornal.util.AulaFileUtil;
@@ -23,13 +25,18 @@ public class MainController {
 	private ISecaoDAO secaoDAO;
 	
 	@Autowired
+	private INoticiasDAO noticiaDAO;
+	
+	@Autowired
 	private ServletContext servletContext;
 	
 	@RequestMapping("/")
 	public String home(Model model)
 	{
-		List<Secao> secoes = secaoDAO.findAll(); 
+		List<Secao> secoes = secaoDAO.findAll();
+		List<Noticia> noticias = noticiaDAO.findTop20ByOrderByDataNoticiaDesc();
 		model.addAttribute("secoes", secoes);
+		model.addAttribute("noticias", noticias);
 		return "home";
 	}
 	

@@ -11,30 +11,29 @@
 	</script>
 </head>
 <body>
-
 	<div class="form_group container ">
-		<div class="jumbotron ">
-			<form  action="/CadastroUsuario" method="post">
+		<div class="jumbotron">
+			<form action="/CadastrarUsuario" method="post">
 				<fieldset class="form-group">
 					<label for="inputNome">Nome</label>
-					<input type="text" class="form-control" id="nome" placeholder="Digite seu Nome">
+					<input type="text" class="form-control" name="nome" placeholder="Digite seu Nome">
 				</fieldset>
 				<fieldset class="form-group">
-					<label for="inputLogin">Endereço de e-mail</label>
-					<input type="login" class="form-control" id="login" placeholder="Digite seu Login">
+					<label for="inputLogin">Login</label>
+					<input type="text" class="form-control" name="login" placeholder="Digite seu Login">
 				</fieldset>
 				<fieldset class="form-group">
 					<label for="inputEmail">Endereço de e-mail</label>
-					<input type="email" class="form-control" id="email" placeholder="Digite o E-mail">
+					<input type="email" class="form-control" name="email" placeholder="Digite o E-mail">
 				</fieldset>
 				<fieldset class="form-group">
 					<label for="inputPassword">Senha</label>
-					<input type="password" class="form-control" id="senha" placeholder="Digite a senha">
+					<input type="password" class="form-control" name="senha" placeholder="Digite a senha">
 				</fieldset>			
-				<fieldset class="form-group">
+ 			<!-- 	<fieldset class="form-group">
 					<label for="passwordConfirm">Confirmar senha</label>
-					<input type="password" class="form-control" placeholder="Digite a senha">
-				</fieldset>		
+					<input type="password" class="form-control" name="confirmacaoSenha" placeholder="Digite a senha">
+				</fieldset>	-->	
 				<button type="submit" class="btn btn-primary pull-right">Submeter</button>
 				<a class="btn btn-danger pull-left" role="button" href="/" >Voltar</a>
 			</form>
