@@ -22,7 +22,6 @@ public class LoginController
 	@RequestMapping(value="/login",method=RequestMethod.POST)
 	public String fazerLogin(LoginForm form, HttpSession session)
 	{
-		System.out.println("Passou aqui");
 		String login = form.getLogin();
 		String senha = form.getSenha();
 		Usuario usuario = usuarioDAO.findByEmailLike(login);
@@ -33,9 +32,7 @@ public class LoginController
 		
 		if(usuario.getSenha().equals(Encoder.encode(senha)))
 			session.setAttribute("usuario_logado", usuario);
-		
-		System.out.println("Usuario logado = " + usuario.getLogin());
-		
+				
 		return "redirect:/";
 	}
 	

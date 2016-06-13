@@ -63,10 +63,13 @@
           			</c:otherwise>
           		</c:choose>
         </div><!--/.nav-collapse -->
-        <div>
-           <text class="" style="color: #fff">Bem-vindo, ${ usuario_logado.nome }</text>
-        </div>
+        <c:if test="${ usuario_logado != null }">
+           	<div>
+           		<text class="" style="color: #fff">Bem-vindo, ${ usuario_logado.nome }</text>
+        	</div>
         
+        </c:if>
+
         <div class="search">
             <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
             <form action="">
