@@ -43,7 +43,10 @@
               </ul>
             </li>  --> 
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="404.html">404 Page</a></li>
+            <c:if test="${ usuario_logado.papel.id == 2 || usuario.logado.papel.id == 3  }">
+            	<li><a href="/InserirNoticiaFormulario">Nova Notícia</a></li>
+            </c:if>
+            
           </ul>           
           
           		<c:choose>

@@ -6,5 +6,5 @@ import br.jornal.models.Secao;
 
 public interface ISecaoDAO extends JpaRepository<Secao, Long>
 {
-
+	public Secao findByTituloLike(String titulo);
 }

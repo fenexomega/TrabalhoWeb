@@ -32,7 +32,7 @@ public class NoticiaController {
 	private ISecaoDAO secaoDAO;
 
 	
-	@RequestMapping("/inserirNoticiaFormulario")
+	@RequestMapping("/InserirNoticiaFormulario")
 	public String insertNoticiaFormulario(Model model)
 	{
 		List<Secao> secoes = secaoDAO.findAll();
@@ -40,20 +40,23 @@ public class NoticiaController {
 		return "inserir_noticia";
 	}
 	
-	@RequestMapping(value="/inserirNoticia",method=RequestMethod.POST)
+	
+//	TODO: Consertar a view
+// http://stackoverflow.com/questions/17218693/how-to-pass-data-from-formselect-spring-mvc
+	@RequestMapping(value="/InserirNoticia",method=RequestMethod.POST)
 	public String insertNoticia(Noticia noticia, BindingResult result,
-			@RequestParam(value="image",required=true) MultipartFile image,
-			@RequestParam("secao") long secao)
+			@RequestParam MultipartFile imagem,
+			@RequestParam Secao secoes)
 	{
 	
 		noticia = noticiasDAO.save(noticia);
-		noticia.setSecao(secaoDAO.findOne(secao));
+		noticia.setSecao(secoes);
 		
-		if(image != null && image.isEmpty() == false)
+		if(imagem != null && imagem.isEmpty() == false)
 		{
 			String pathname = servletContext.getRealPath("/") + "images/noticias" + noticia.getId() + ".png";
 			
-			AulaFileUtil.saveImage(pathname, image);
+			AulaFileUtil.saveImage(pathname, imagem);
 		}
 		return "redirect:/home";
 	}

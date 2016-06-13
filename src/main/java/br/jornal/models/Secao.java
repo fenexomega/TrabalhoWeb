@@ -35,6 +35,10 @@ public class Secao {
 		this.descricao = descricao;
 	}
 	
+	@Override
+	public String toString() {
+		return titulo;
+	}
 	
 	
 }

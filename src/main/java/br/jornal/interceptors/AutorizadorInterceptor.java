@@ -30,6 +30,8 @@ public class AutorizadorInterceptor extends HandlerInterceptorAdapter {
 //		TODO fazer a autorização das páginas para cada tipo de usuário (usuario,editor,jornalista)
 		if(usuario != null)
 			return true;
+		
+		response.sendRedirect("/");
 		return false;
 		
 	}
