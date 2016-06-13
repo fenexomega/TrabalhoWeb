@@ -45,11 +45,28 @@
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="404.html">404 Page</a></li>
           </ul>           
-          <ul class="nav navbar-nav navbar-right custom_nav">
-          	<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
-          </ul>
           
+          		<c:choose>
+          			<c:when test="${ usuario_logado != null }" >
+          				<ul class="nav navbar-nav navbar-right custom_nav pull-right">
+         			 	<li>
+							<a href="/logout" >Logout</a>
+						</li>
+        			</ul>
+          			</c:when>
+          			<c:otherwise>
+          			<ul class="nav navbar-nav navbar-right custom_nav">
+         			 	<li>
+							<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+						</li>
+        			</ul>
+          			</c:otherwise>
+          		</c:choose>
         </div><!--/.nav-collapse -->
+        <div>
+           <text class="" style="color: #fff">Bem-vindo, ${ usuario_logado.nome }</text>
+        </div>
+        
         <div class="search">
             <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
             <form action="">
@@ -58,24 +75,24 @@
           </div>
       </div>
     </nav>
+    
   </header>
   <!-- End header -->  
-  <!-- start content section -->
-  <section id="content">
+
   
 
       <!-- End top add place  -->  
       
        <div class="modal fade container" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	   <div class="modal-dialog jumbotron">
-				<form action="" method="post">
+				<form action="/login" method="POST">
 					<fieldset class="form-group">
 						<label for="inputLogin">Login</label>
-						<input type="text" class="form-control" id="login" placeholder="Login">
+						<input type="text" class="form-control" name="login" id="login" placeholder="Login">
 					</fieldset>
 					<fieldset class="form-group">
 						<label for="inputPassword">Senha</label>
-						<input type="password" class="form-control" id="password" placeholder="Senha">
+						<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
 					</fieldset>
 					<a href="/Cadastro" class="btn btn-success" role="button">Realizar Cadastro</a>
 					<button type="submit" class="btn btn-primary pull-right">Logar</button>

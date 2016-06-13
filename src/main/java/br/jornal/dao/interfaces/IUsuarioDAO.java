@@ -8,7 +8,7 @@ import br.jornal.models.Usuario;
 
 public interface IUsuarioDAO extends JpaRepository<Usuario, Long> {
 
-	public List<Usuario> findByLoginLike(String login);
+	public Usuario findByLoginLike(String login);
 	
-	public List<Usuario> findByEmailLike(String email);
+	public Usuario findByEmailLike(String email);
 }

@@ -20,6 +20,7 @@ import br.jornal.dao.interfaces.IPapelDAO;
 import br.jornal.dao.interfaces.IUsuarioDAO;
 import br.jornal.models.Usuario;
 import br.jornal.util.AulaFileUtil;
+import br.jornal.util.Encoder;
 
 @Controller
 public class UsuarioController {
@@ -58,25 +59,19 @@ public class UsuarioController {
 		
 		
 		System.out.println(usuario.getEmail());
-		try {
-			byte[] digest = MessageDigest.getInstance("MD5").digest(usuario.getSenha().getBytes());
-			usuario.setSenha(MD5Encoder.encode(digest));
-			usuario.setPapel(papelDAO.findByPapelLike("usuario"));
-			usuario = usuarioDAO.save(usuario);
-			
-			//salvar imagem
-			if(imagem != null)
-			{
-				String pathname = servletContext.getRealPath("/") + "images/" + usuario.getId() + ".png";
-				AulaFileUtil.saveImage(pathname, imagem);
-			}
-			
-		} catch (NoSuchAlgorithmException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		usuario.setSenha(Encoder.encode(usuario.getSenha()));
+		usuario.setPapel(papelDAO.findByPapelLike("usuario"));
+		usuario = usuarioDAO.save(usuario);
+
+		//salvar imagem
+		if(imagem != null)
+		{
+			String pathname = servletContext.getRealPath("/") + "images/usuarios/" + usuario.getId() + ".png";
+			AulaFileUtil.saveImage(pathname, imagem);
 		}
-		
-		
+
+
+
 		return "redirect:/";
 	}
 }
