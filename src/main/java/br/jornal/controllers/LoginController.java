@@ -1,6 +1,5 @@
 package br.jornal.controllers;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +27,9 @@ public class LoginController
 		
 		if(usuario == null)
 			usuario = usuarioDAO.findByLoginLike(login);
+		
+		if(usuario == null)
+			throw new RuntimeException("Usuário não encontrado!");	
 		
 		
 		if(usuario.getSenha().equals(Encoder.encode(senha)))

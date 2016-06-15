@@ -19,6 +19,8 @@ public class Noticia {
 	private long id;
 	private String titulo;
 	private String subtitulo;
+	
+	@Column(columnDefinition="TEXT")
 	private String texto;
 	
 	@ManyToOne(optional=false)
@@ -32,7 +34,6 @@ public class Noticia {
 	@JoinColumn(name="id_secao")
 	private Secao secao;
 	private boolean ativa;
-	private String imagePath;
 	
 	public long getId() {
 		return id;
@@ -71,12 +72,6 @@ public class Noticia {
 	}
 	public void setAtiva(boolean ativa) {
 		this.ativa = ativa;
-	}
-	public String getImagePath() {
-		return imagePath;
-	}
-	public void setImagePath(String imagePath) {
-		this.imagePath = imagePath;
 	}
 	
 	public Usuario getAutor() {

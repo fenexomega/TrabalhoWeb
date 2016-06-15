@@ -3,6 +3,7 @@ package br.jornal.controllers;
 import java.util.List;
 
 import javax.servlet.ServletContext;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,7 @@ import br.jornal.dao.interfaces.INoticiasDAO;
 import br.jornal.dao.interfaces.ISecaoDAO;
 import br.jornal.models.Noticia;
 import br.jornal.models.Secao;
+import br.jornal.models.Usuario;
 import br.jornal.util.AulaFileUtil;
 
 @Controller
@@ -46,11 +48,13 @@ public class NoticiaController {
 	@RequestMapping(value="/InserirNoticia",method=RequestMethod.POST)
 	public String insertNoticia(Noticia noticia, BindingResult result,
 			@RequestParam MultipartFile imagem,
-			@RequestParam Secao secoes)
+			@RequestParam long id_secao, HttpSession session)
 	{
-	
+		noticia.setSecao(secaoDAO.findOne(id_secao));
+		Usuario autor = (Usuario) session.getAttribute("usuario_logado");
+		noticia.setAutor(autor);
 		noticia = noticiasDAO.save(noticia);
-		noticia.setSecao(secoes);
+		
 		
 		if(imagem != null && imagem.isEmpty() == false)
 		{

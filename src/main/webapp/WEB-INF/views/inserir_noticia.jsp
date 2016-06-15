@@ -31,10 +31,12 @@
 				</fieldset>
 				<fieldset class="form-group">
 					<label>Seção</label>
-					<sp-form:select path="secao" >
-							<sp-form:option value="NONE"> --SELECIONE-- </sp-form:option>
-							<sp-form:options items="${ secoes }" />
-\					</sp-form:select>
+					<select name="id_secao" id="secao" >
+							<option value="0"> --SELECIONE-- </option>
+							<c:forEach items="${ secoes }" var="secao">
+								<option value="${ secao.id }"  > ${ secao.titulo } </option>
+							</c:forEach>
+					</select>
 				</fieldset>
 				<div class="row pull-right">
 					<a class="btn btn-danger  col-md4" href="/" >Cancelar</a>
