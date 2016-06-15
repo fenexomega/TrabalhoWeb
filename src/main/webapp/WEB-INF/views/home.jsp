@@ -21,7 +21,7 @@
 				  <div class="slick_slider">
 				  <c:forEach items="${ noticias }" var="noticia">
 					  <div class="single_iteam">
-						  <img src="img/${ noticia.id }.jpg" alt="img">
+						  <img src="images/noticia/${ noticia.id }.png" alt="img">
 						  <h2><a class="slider_tittle" href="/MostrarNoticia?id=${ noticia.id }">${noticia.titulo}</a></h2>
 						</div>
 				  </c:forEach>

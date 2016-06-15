@@ -58,10 +58,10 @@ public class NoticiaController {
 		
 		if(imagem != null && imagem.isEmpty() == false)
 		{
-			String pathname = servletContext.getRealPath("/") + "images/noticias" + noticia.getId() + ".png";
+			String pathname = servletContext.getRealPath("/") + "images/noticia/" + noticia.getId() + ".png";
 			
 			AulaFileUtil.saveImage(pathname, imagem);
 		}
-		return "redirect:/home";
+		return "redirect:/";
 	}
 }
