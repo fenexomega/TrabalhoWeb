@@ -30,6 +30,7 @@ public class SecaoController {
 		if(secao == null)
 			return "redirect:404.html";
 		List<Noticia> noticias = dao.findBySecao(secao); 
+		model.addAttribute("noticias",noticias);
 		
 		return "";
 	}

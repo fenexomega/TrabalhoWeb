@@ -25,8 +25,6 @@
 						  <h2><a class="slider_tittle" href="/MostrarNoticia?id=${ noticia.id }">${noticia.titulo}</a></h2>
 						</div>
 				  </c:forEach>
-					
-					
 				  </div>
 				</div><!-- End featured slider -->
         </div>

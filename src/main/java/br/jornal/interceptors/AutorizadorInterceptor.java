@@ -22,7 +22,8 @@ public class AutorizadorInterceptor extends HandlerInterceptorAdapter {
 			uri.endsWith("Cadastro") || 
 			uri.startsWith("/MostrarNoticia")||
 			uri.endsWith("error") ||
-			uri.endsWith("CadastrarUsuario"))
+			uri.endsWith("CadastrarUsuario") ||
+			uri.startsWith("/FormularioLogin"))
 			return true;
 		
 		Usuario usuario = (Usuario) request.getSession().getAttribute("usuario_logado");

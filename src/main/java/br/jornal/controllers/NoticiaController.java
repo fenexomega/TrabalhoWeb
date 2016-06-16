@@ -43,8 +43,6 @@ public class NoticiaController {
 	}
 	
 	
-//	TODO: Consertar a view
-// http://stackoverflow.com/questions/17218693/how-to-pass-data-from-formselect-spring-mvc
 	@RequestMapping(value="/InserirNoticia",method=RequestMethod.POST)
 	public String insertNoticia(Noticia noticia, BindingResult result,
 			@RequestParam MultipartFile imagem,
@@ -59,7 +57,6 @@ public class NoticiaController {
 		if(imagem != null && imagem.isEmpty() == false)
 		{
 			String pathname = servletContext.getRealPath("/") + "images/noticia/" + noticia.getId() + ".png";
-			
 			AulaFileUtil.saveImage(pathname, imagem);
 		}
 		return "redirect:/";

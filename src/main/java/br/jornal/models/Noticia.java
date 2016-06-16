@@ -59,8 +59,6 @@ public class Noticia {
 	public void setTexto(String texto) {
 		this.texto = texto;
 	}
-
-
 	public Date getDataNoticia() {
 		return dataNoticia;
 	}

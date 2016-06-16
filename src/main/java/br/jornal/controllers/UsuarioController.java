@@ -1,13 +1,9 @@
 package br.jornal.controllers;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
-import org.apache.tomcat.util.security.MD5Encoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -66,7 +62,7 @@ public class UsuarioController {
 		//salvar imagem
 		if(imagem != null)
 		{
-			String pathname = servletContext.getRealPath("/") + "images/usuarios/" + usuario.getId() + ".png";
+			String pathname = servletContext.getRealPath("/") + "images/usuario/" + usuario.getId() + ".png";
 			AulaFileUtil.saveImage(pathname, imagem);
 		}
 

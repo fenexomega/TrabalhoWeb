@@ -18,8 +18,14 @@ public class LoginController
 	@Autowired
 	private IUsuarioDAO usuarioDAO;
 	
+	@RequestMapping("/FormularioLogin")
+	public String formularioLogin()
+	{
+		return "formulario_login";
+	}
+	
 	@RequestMapping(value="/login",method=RequestMethod.POST)
-	public String fazerLogin(LoginForm form, HttpSession session)
+	public String login(LoginForm form, HttpSession session)
 	{
 		String login = form.getLogin();
 		String senha = form.getSenha();
@@ -29,11 +35,14 @@ public class LoginController
 			usuario = usuarioDAO.findByLoginLike(login);
 		
 		if(usuario == null)
-			throw new RuntimeException("Usuário não encontrado!");	
+			return "redirect:/FormularioLogin";
 		
 		
 		if(usuario.getSenha().equals(Encoder.encode(senha)))
 			session.setAttribute("usuario_logado", usuario);
+		else
+			return "redirect:/FormularioLogin";
+
 				
 		return "redirect:/";
 	}
