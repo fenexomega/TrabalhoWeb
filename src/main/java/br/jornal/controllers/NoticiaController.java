@@ -1,5 +1,8 @@
 package br.jornal.controllers;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -51,6 +54,7 @@ public class NoticiaController {
 		noticia.setSecao(secaoDAO.findOne(id_secao));
 		Usuario autor = (Usuario) session.getAttribute("usuario_logado");
 		noticia.setAutor(autor);
+		noticia.setDataNoticia(new Date());
 		noticia = noticiasDAO.save(noticia);
 		
 		
@@ -60,5 +64,18 @@ public class NoticiaController {
 			AulaFileUtil.saveImage(pathname, imagem);
 		}
 		return "redirect:/";
+	}
+	
+	@RequestMapping("/MostrarNoticia")
+	public String mostrarNoticia(Model model,
+								@RequestParam long id)
+	{
+		Noticia noticia = noticiasDAO.findById(id);
+		if(noticia == null)
+			return "redirect:/";
+		DateFormat format = new SimpleDateFormat("dd/MM/yyyy hh:mm");
+		model.addAttribute("data_noticia",format.format(noticia.getDataNoticia()));
+		model.addAttribute(noticia);
+		return "visualizar_noticia";
 	}
 }

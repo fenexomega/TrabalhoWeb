@@ -1,34 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cyber Tech:Single page</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- for fontawesome icon css file -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- for content animate css file -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- google fonts  -->
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>   
-   <link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
-     <!-- slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet">     
-    <!-- <link href="css/theme-red.css" rel="stylesheet">    -->
-     <link href="css/theme.css" rel="stylesheet">
-    <!-- main site css file -->    
-    <link href="style.css" rel="stylesheet">
- 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>Jornal jornal - ${ noticia.titulo }</title>
+    <%@ include file="common/metatags.jsp" %>
   </head>
 <body>
   <!-- =========================
@@ -112,7 +92,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -120,7 +100,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -128,7 +108,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="#">It’s Now An Android World- Feel The Power</a>
+                      <a href="#">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -136,7 +116,16 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="#">It’s Now An Android World- Feel The Power</a>
+                      <a href="#">Itâs Now An Android World- Feel The Power</a>
+                    </figcaption>     
+                  </figure>
+                </li>
+                <li>
+                  <figure class="effect-lily">
+                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
+                    <figcaption>                <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
+                    
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -144,15 +133,7 @@
                   <figure class="effect-lily">
                     <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">It’s Now An Android World- Feel The Power</a>
+                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
                     </figcaption>     
                   </figure>
                 </li>
@@ -275,14 +256,15 @@
               <li class="active">Mobile</li>
             </ol>        
             <div class="single_page_area">
-              <h1>Get $50 Off Any Tablet Priced $150 Or More</h1>
+              <h1>${ noticia.titulo }</h1>
+              <h2>${ noticia.subtitulo }</h2>
               <div class="post_commentbox">
-                <a href="#"><i class="fa fa-user"></i>Wpfreeware</a>
-                <span><i class="fa fa-calendar"></i>6:49 AM</span>
-                <a href="#"><i class="fa fa-tags"></i>Technology</a>
+                <a href="#"><i class="fa fa-user"></i>${ noticia.autor.nome }</a>
+                <span><i class="fa fa-calendar"></i>${ data_noticia }</span>
+                <a href="#"><i class="fa fa-tags"></i>${ noticia.secao.titulo }</a>
               </div>
               <div class="single_content">
-                <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
+              	<p>${ noticia.texto }</p>
                 <blockquote>Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.</blockquote>
                 <p> Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
                 <ul>

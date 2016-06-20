@@ -1,6 +1,6 @@
 package br.jornal.models;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,17 +17,20 @@ public class Noticia {
 	@Column(nullable=false)
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
+	
+	@Column(nullable=false)
 	private String titulo;
+	@Column(nullable=false)
 	private String subtitulo;
 	
-	@Column(columnDefinition="TEXT")
+	@Column(columnDefinition="TEXT",nullable=false)
 	private String texto;
 	
 	@ManyToOne(optional=false)
-	@JoinColumn(name="id_autor")
+	@JoinColumn(name="id_autor",nullable=false)
 	private Usuario autor;
 	
-	@Column(name="data_noticia")
+	@Column(name="data_noticia",nullable=false)
 	private Date dataNoticia;
 	
 	@ManyToOne(optional=false)

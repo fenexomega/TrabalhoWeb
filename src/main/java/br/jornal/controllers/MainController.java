@@ -27,8 +27,6 @@ public class MainController {
 	@Autowired
 	private INoticiasDAO noticiaDAO;
 	
-	@Autowired
-	private ServletContext servletContext;
 	
 	@RequestMapping("/")
 	public String home(Model model)
@@ -46,19 +44,6 @@ public class MainController {
 		return "redirect:/";
 	}
 	
-	public String inserirImagem(Usuario user,
-			@RequestParam(value="image",required=false) MultipartFile image)
-	{
-		if(image != null && image.isEmpty() == false)
-		{
-			String extension = image.getOriginalFilename().split("\\.")[1];
-			String pathname = servletContext.getRealPath("/") + "images/" + user.getId()
-			+ extension;
-			
-			AulaFileUtil.saveImage(pathname, image);
-		}
-		return "";
-	}
 	
 	@RequestMapping("/404")
 	public String notFound()
