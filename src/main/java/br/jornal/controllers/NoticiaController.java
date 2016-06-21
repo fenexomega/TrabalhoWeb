@@ -29,7 +29,7 @@ public class NoticiaController {
 	
 	@Autowired
 	private INoticiasDAO noticiasDAO;
-	
+
 	@Autowired
 	private ServletContext servletContext;
 	
@@ -71,11 +71,14 @@ public class NoticiaController {
 								@RequestParam long id)
 	{
 		Noticia noticia = noticiasDAO.findById(id);
+		List<Secao> secoes = secaoDAO.findAll();
+		
 		if(noticia == null)
 			return "redirect:/";
 		DateFormat format = new SimpleDateFormat("dd/MM/yyyy hh:mm");
 		model.addAttribute("data_noticia",format.format(noticia.getDataNoticia()));
 		model.addAttribute(noticia);
+		model.addAttribute("secoes",secoes);
 		return "visualizar_noticia";
 	}
 }

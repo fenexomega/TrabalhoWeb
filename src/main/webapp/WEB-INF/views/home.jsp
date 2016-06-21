@@ -45,46 +45,6 @@
                     </figcaption>     
                   </figure>
                 </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
               </ul>
             </div><!-- End single widget -->
             <!-- start single widget -->
@@ -198,7 +158,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-8">
           <div class="middle_content">
-            <h2>Whatâs Hot</h2>
+            <h2>Notícias em Destaque</h2>
 
             <!-- start featured post -->
             <ul class="featured_nav">

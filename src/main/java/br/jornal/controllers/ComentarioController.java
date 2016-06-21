@@ -1,47 +1,52 @@
 package br.jornal.controllers;
 
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import br.jornal.dao.interfaces.IComentarioDAO;
+import br.jornal.dao.interfaces.INoticiasDAO;
+import br.jornal.models.Comentario;
+import br.jornal.models.Noticia;
+import br.jornal.models.Usuario;
 
 
 @Controller
 public class ComentarioController {
 
-	@RequestMapping("/getComentarios")
-	public @ResponseBody JsonComentario getComentarios(@RequestParam("idNoticia") int idNoticia)
+	@Autowired
+	private IComentarioDAO comentarioDAO;
+	
+	@Autowired
+	private INoticiasDAO noticiaDAO;
+	
+	
+	@RequestMapping(value="/InserirComentario",method=RequestMethod.POST)
+	public String inserirComentario(String comentario,long id_noticia,HttpSession session)
 	{
-	
-		return new JsonComentario("João Ninguém","Blábláblá","123.jpg");
+		Comentario c = new Comentario();
+		c.setTexto(comentario);
+		Noticia noticia = noticiaDAO.findOne(id_noticia);
+		if(noticia == null)
+		{
+			//TODO: erro caso o número da notícia não exista
+			throw new RuntimeException("Notícia nao existe!");
+			
+		}
+		c.setNoticia(noticia);
+		Usuario autor = (Usuario) session.getAttribute("usuario_logado");
+		c.setAutor(autor);
+		comentarioDAO.save(c);
+		
+		return "redirect:MostrarNoticia?id=" + id_noticia;
 	}
-	
-	
 	
 }
 
-class JsonComentario{
-	private final String autorNome;
-	private final String texto;
-	private final String autorImagePath;
-	
-	public JsonComentario(String autorNome, String texto, String autorImagePath) {
-		super();
-		this.autorNome = autorNome;
-		this.texto = texto;
-		this.autorImagePath = autorImagePath;
-	}
-	public String getAutorNome() {
-		return autorNome;
-	}
-	public String getTexto() {
-		return texto;
-	}
-	public String getAutorImagePath() {
-		return autorImagePath;
-	}
-	
+
 	
 
 
-}

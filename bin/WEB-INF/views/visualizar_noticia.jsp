@@ -15,71 +15,12 @@
     //////////////This Theme Design and Developed //////////////////////
     //////////// by www.wpfreeware.com======================-->
 
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="status">&nbsp;</div>
-  </div>
-  <!-- End Preloader -->
-   
-  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-  <!-- start header -->
-  <header id="header">
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-		  
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
-		  
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav custom_nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Technology</a></li>            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Android</a></li>
-                <li><a href="#">Samsung</a></li>
-                <li><a href="#">Nokia</a></li>
-                <li><a href="#">Walton Mobile</a></li>
-                <li><a href="#">Sympony</a></li>               
-              </ul>
-            </li>
-            <li><a href="#">Laptops</a></li> 
-            <li><a href="#">Tablets</a></li> 
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="404.html">404 Page</a></li>
-          </ul>         
-          
-        </div><!--/.nav-collapse -->
-        <div class="search">
-            <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
-            <form action="">
-              <input class="search_bar" type="text" placeholder="Search here">
-            </form>
-          </div>
-      </div>
-    </nav>
-  </header>
-  <!-- End header -->
+ <%@include file="common/navbar.jsp" %>
   <!-- start content section -->
   <section id="content">
     <div class="container">
       <!-- start top add place  -->
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="topadd_bar">
-            <a href="#"><img src="img/addbanner_728x90_V1.jpg" alt="img"></a>
-          </div>
-        </div>
-      </div> 
+      
       <!-- End top add place  -->
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-4">
@@ -263,33 +204,11 @@
                 <span><i class="fa fa-calendar"></i>${ data_noticia }</span>
                 <a href="#"><i class="fa fa-tags"></i>${ noticia.secao.titulo }</a>
               </div>
+              <div class="row">
+              	<img alt="" class="" src="images/noticia/${ noticia.id }.png">
+              </div>
               <div class="single_content">
               	<p>${ noticia.texto }</p>
-                <blockquote>Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.</blockquote>
-                <p> Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
-                <ul>
-                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
-                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
-                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
-                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
-                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
-                  <li>Nullam vitae nibh odio, non scelerisque nibh</li>
-                </ul>
-                 <p> Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
-                <h1>This is h1 content </h1>
-                <h2>This is h2 content </h2>
-                <h3>This is h3 content </h3>
-                <h4>This is h4 content </h4>
-                <h5>This is h5 content </h5>
-                <h6>This is h6 content </h6>
-                <button class="btn default-btn">Default</button>
-                <button class="btn btn-red">Red Button</button>
-                <button class="btn btn-yellow">Yellow Button</button>
-                <button class="btn btn-green">Green Button</button>
-                <button class="btn btn-black">Black Button</button>
-                <button class="btn btn-orange">Orange Button</button>
-                <button class="btn btn-blue">Blue Button</button>
-                <button class="btn btn-lime">Lime Button</button>
               </div>
               
             </div>  
@@ -304,72 +223,36 @@
               <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
             </ul>
           </div> 
+          <!--  PARTE DOS COMENTÁRIOS  -->
           <div class="related_post">
-            <h2>Related Post <i class="fa fa-thumbs-o-up"></i></h2>
-            <ul class="ppost_nav wow fadeInDown">
-                <li>
-                  <div class="media">
-                    <a href="single_page.html" class="media-left">
-                      <img alt="img" src="img/70x70.jpg">
-                    </a>
-                    <div class="media-body">
-                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
+            <h2>Comentários <i class="fa fa-thumbs-o-up"></i></h2>
+            
+            <div class="container">
+	            <div class="jumbotron">
+	              <form action="">
+	              <b>Deseja adicionar um comentário?</b>
+	            	<fieldset class="form-group">
+	            		<textarea name="coment" id="coment-text"></textarea>
+	            	</fieldset>
+	            		<input type="hidden" name="id_noticia" value="${ noticia.id }" />
+	            	<button type="submit" class="btn btn-success pull-right">Comentar</button>
+	            </form>
+	            </div>
+            </div>
+          
+            <ul class="">
+            <c:forEach items="${ comentarios }" var="comentario">
+            	<li>
+                  <div class="card card-block">
+					  <div class="">
+					    <h4 class="card-title">${ comentario.autor.nome }</h4>
+					    <p class="card-text">${ comentario.texto }</p>
+					  </div>
+					</div>
+					<hr>
                 </li>
-                 <li>
-                  <div class="media">
-                    <a href="single_page.html" class="media-left">
-                      <img alt="img" src="img/70x70.jpg">
-                    </a>
-                    <div class="media-body">
-                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a href="single_page.html" class="media-left">
-                      <img alt="img" src="img/70x70.jpg">
-                    </a>
-                    <div class="media-body">
-                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-				
-                <li>
-                  <div class="media">
-                    <a href="single_page.html" class="media-left">
-                      <img alt="img" src="img/70x70.jpg">
-                    </a>
-                    <div class="media-body">
-                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a href="single_page.html" class="media-left">
-                      <img alt="img" src="img/70x70.jpg">
-                    </a>
-                    <div class="media-body">
-                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a href="single_page.html" class="media-left">
-                      <img alt="img" src="img/70x70.jpg">
-                    </a>
-                    <div class="media-body">
-                      <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>				
-                  
-                                     
+            </c:forEach>
+
               </ul>
           </div>
         </div>
