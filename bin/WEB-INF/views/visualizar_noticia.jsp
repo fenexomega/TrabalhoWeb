@@ -229,12 +229,12 @@
             
             <div class="container">
 	            <div class="jumbotron">
-	              <form action="">
+	              <form action="/InserirComentario" method="post">
 	              <b>Deseja adicionar um comentário?</b>
 	            	<fieldset class="form-group">
 	            		<textarea name="coment" id="coment-text"></textarea>
 	            	</fieldset>
-	            		<input type="hidden" name="id_noticia" value="${ noticia.id }" />
+	            		<input type="hidden" name="id_noticia" value="${ noticia.id }" >
 	            	<button type="submit" class="btn btn-success pull-right">Comentar</button>
 	            </form>
 	            </div>

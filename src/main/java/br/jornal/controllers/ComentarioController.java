@@ -25,10 +25,10 @@ public class ComentarioController {
 	
 	
 	@RequestMapping(value="/InserirComentario",method=RequestMethod.POST)
-	public String inserirComentario(String comentario,long id_noticia,HttpSession session)
+	public String inserirComentario(String coment,long id_noticia,HttpSession session)
 	{
 		Comentario c = new Comentario();
-		c.setTexto(comentario);
+		c.setTexto(coment);
 		Noticia noticia = noticiaDAO.findOne(id_noticia);
 		if(noticia == null)
 		{
