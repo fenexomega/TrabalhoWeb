@@ -1,11 +1,15 @@
 package br.jornal.controllers;
 
+import java.util.List;
+
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -26,6 +30,7 @@ public class UsuarioController {
 	
 	@Autowired
 	private IPapelDAO papelDAO;
+	
 	
 	@Autowired
 	private ServletContext servletContext;
@@ -69,5 +74,26 @@ public class UsuarioController {
 
 
 		return "redirect:/";
+	}
+	
+	@RequestMapping("/PainelControleUsuario")
+	public String painelControleUsuario(Model model)
+	{
+		List<Usuario> usuarios = usuarioDAO.findAll();
+		model.addAttribute("usuarios",usuarios);
+		return "painel_controle_usuario";
+	}
+	
+	@RequestMapping(value="/AtualizarUsuario",method=RequestMethod.POST)
+	public String atualizarUsuario(long id_usuario, long papel, HttpServletRequest request)
+	{
+		Usuario usuario_logado = (Usuario) request.getSession().getAttribute("usuario_logado");
+		//Se o usuário não for editor, ele não pode fazer essa operação!
+		if(usuario_logado.getPapel().getId() != 3)
+			return "redirect:/";
+		Usuario usuario = usuarioDAO.findOne(id_usuario);
+		usuario.setPapel(papelDAO.findOne(papel));
+		usuarioDAO.save(usuario);
+		return "redirect:/PainelControleUsuario";
 	}
 }
