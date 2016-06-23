@@ -12,6 +12,7 @@ public interface INoticiasDAO  extends JpaRepository<Noticia, Long>{
 	public Noticia findById(long id);
 	
 	public List<Noticia> findTop20ByOrderByDataNoticiaDesc();
+	public List<Noticia> findTop20ByAtivaTrueOrderByDataNoticiaDesc();
 	
 	public List<Noticia> findBySecao(Secao secao);
 	

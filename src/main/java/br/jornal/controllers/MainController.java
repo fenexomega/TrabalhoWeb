@@ -32,7 +32,7 @@ public class MainController {
 	public String home(Model model)
 	{
 		List<Secao> secoes = secaoDAO.findAll();
-		List<Noticia> noticias = noticiaDAO.findTop20ByOrderByDataNoticiaDesc();
+		List<Noticia> noticias = noticiaDAO.findTop20ByAtivaTrueOrderByDataNoticiaDesc();
 		model.addAttribute("secoes", secoes);
 		model.addAttribute("noticias", noticias);
 		return "home";

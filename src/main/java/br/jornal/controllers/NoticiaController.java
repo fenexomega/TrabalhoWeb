@@ -87,4 +87,23 @@ public class NoticiaController {
 		model.addAttribute("comentarios",comentarios);
 		return "visualizar_noticia";
 	}
+	
+	@RequestMapping("/PainelControleNoticia")
+	public String painelControleNoticia(Model model)
+	{
+		List<Noticia> noticias = noticiasDAO.findAll();
+		model.addAttribute("noticias",noticias);
+		return "painel_controle_noticia";
+	}
+	
+	@RequestMapping(value="/AtualizarNoticia",method=RequestMethod.POST)
+	public String atualizarNoticia(long noticia_id,boolean ativa)
+	{
+		Noticia noticia = noticiasDAO.findById(noticia_id);
+		noticia.setAtiva(ativa);
+		noticiasDAO.save(noticia);
+		return "redirect:/PainelControleNoticia";
+	}
+	
+	
 }

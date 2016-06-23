@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.annotations.ColumnDefault;
+
 @Entity(name="noticia")
 public class Noticia {
 	
@@ -36,6 +38,8 @@ public class Noticia {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="id_secao")
 	private Secao secao;
+	
+	@ColumnDefault(value="true")
 	private boolean ativa;
 	
 	public long getId() {

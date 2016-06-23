@@ -16,6 +16,7 @@
     //////////// by www.wpfreeware.com======================-->
 
  <%@include file="common/navbar.jsp" %>
+ 
   <!-- start content section -->
   <section id="content">
     <div class="container">
