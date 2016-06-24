@@ -39,11 +39,11 @@ public class Noticia {
 	@JoinColumn(name="id_secao")
 	private Secao secao;
 	
-	@ColumnDefault(value="1")
-	private boolean ativa;
+	@Column(nullable=false)
+	private boolean ativa = true;
 	
-	@ColumnDefault(value="1")
-	private boolean emDestaque;
+	@Column(nullable=false)
+	private boolean emDestaque = false;
 	
 	public boolean isEmDestaque() {
 		return emDestaque;

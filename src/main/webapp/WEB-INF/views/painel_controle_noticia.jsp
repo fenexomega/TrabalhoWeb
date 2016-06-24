@@ -24,6 +24,7 @@
 					<td>Título</td>
 					<td>Data</td>
 					<td>Mostrar</td>
+					<td>Destaque</td>
 					<td>Atualizar</td>
 				</tr>
 				<c:forEach items="${ noticias }" var="noticia">
@@ -39,7 +40,19 @@
 									<c:otherwise>
 										<input type="checkbox" name="ativa">
 									</c:otherwise>
-								</c:choose></td> <input type="hidden" name="noticia_id" value=${ noticia.id }>
+								</c:choose>
+							</td>
+							<td>
+								<c:choose>
+									<c:when test="${ noticia.emDestaque == true }">
+										<input type="checkbox" name="emDestaque" checked="checked">
+									</c:when>
+									<c:otherwise>
+										<input type="checkbox" name="emDestaque">
+									</c:otherwise>
+								</c:choose>
+							</td> 
+							<input type="hidden" name="noticia_id" value=${ noticia.id }>
 							<td><button type="submit" class="btn btn-primary">Atualizar</button></td>
 						</form>
 					</tr>

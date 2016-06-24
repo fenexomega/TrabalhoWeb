@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jornal jornal - ${ noticia.titulo }</title>
     <%@ include file="common/metatags.jsp" %>
+    <script type="text/javascript" src="js/showdown.min.js"></script>
   </head>
 <body>
   <!-- =========================
@@ -62,8 +63,8 @@
               <div class="row">
               	<img alt="" class="" src="images/noticia/${ noticia.id }.png">
               </div>
-              <div class="single_content">
-              	<p>${ noticia.texto }</p>
+              <div class="single_content" id="noticia-text" >
+              
               </div>
               
             </div>  
@@ -373,6 +374,13 @@
   </footer>
   <!-- End footer area -->
   
+  <script type="text/javascript" >
+  	var converter = new showdown.Converter();
+  	var text = "${noticia.texto}"
+  	var html = converter.makeHtml(text);
+  	console.log("LOG: " + html);
+  	document.getElementById("noticia-text").innerHTML = html;
+  </script>
 
 	<%@include file="common/end_scripts.jsp" %>
 

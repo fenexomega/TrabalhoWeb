@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.regex.Matcher;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
@@ -60,6 +61,9 @@ public class NoticiaController {
 		Usuario autor = (Usuario) session.getAttribute("usuario_logado");
 		noticia.setAutor(autor);
 		noticia.setDataNoticia(new Date());
+		String texto = noticia.getTexto();
+		texto = texto.replaceAll("\\r\\n|\\r|\\n",Matcher.quoteReplacement("\\n"));
+		noticia.setTexto(texto);
 		noticia = noticiasDAO.save(noticia);
 		
 		
@@ -97,10 +101,11 @@ public class NoticiaController {
 	}
 	
 	@RequestMapping(value="/AtualizarNoticia",method=RequestMethod.POST)
-	public String atualizarNoticia(long noticia_id,boolean ativa)
+	public String atualizarNoticia(long noticia_id,boolean ativa,boolean emDestaque)
 	{
 		Noticia noticia = noticiasDAO.findById(noticia_id);
 		noticia.setAtiva(ativa);
+		noticia.setEmDestaque(emDestaque);
 		noticiasDAO.save(noticia);
 		return "redirect:/PainelControleNoticia";
 	}
