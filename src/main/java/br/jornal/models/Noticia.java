@@ -42,6 +42,15 @@ public class Noticia {
 	@ColumnDefault(value="true")
 	private boolean ativa;
 	
+	@ColumnDefault(value="false")
+	private boolean emDestaque;
+	
+	public boolean isEmDestaque() {
+		return emDestaque;
+	}
+	public void setEmDestaque(boolean emDestaque) {
+		this.emDestaque = emDestaque;
+	}
 	public long getId() {
 		return id;
 	}

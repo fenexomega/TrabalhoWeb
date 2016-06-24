@@ -38,156 +38,10 @@
                     </figcaption>     
                   </figure>
                 </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="#">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="#">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>                <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
-                    
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
-                <li>
-                  <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
-                    <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
-                    </figcaption>     
-                  </figure>
-                </li>
+              
               </ul>
             </div><!-- End single widget -->
-            <!-- start single widget -->
-            <div class="single_widget">
-              <h2>Popular Post</h2>
-              <ul class="ppost_nav wow fadeInDown">
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                         
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                      
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>                     
-              </ul>
-            </div><!-- End single widget -->
+           
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-8">
@@ -228,18 +82,22 @@
           <div class="related_post">
             <h2>Comentários <i class="fa fa-thumbs-o-up"></i></h2>
             
-            <div class="container">
-	            <div class="jumbotron">
-	              <form action="/InserirComentario" method="post">
-	              <b>Deseja adicionar um comentário?</b>
-	            	<fieldset class="form-group">
-	            		<textarea name="coment" id="coment-text"></textarea>
-	            	</fieldset>
-	            		<input type="hidden" name="id_noticia" value="${ noticia.id }" >
-	            	<button type="submit" class="btn btn-success pull-right">Comentar</button>
-	            </form>
+            
+           <c:if test="${ usuario_logado != null }">
+	             <div class="container">
+		        	<div class="jumbotron">
+		              <form action="/InserirComentario" method="post">
+		              <b>Deseja adicionar um comentário?</b>
+		            	<fieldset class="form-group">
+		            		<textarea name="coment" id="coment-text"></textarea>
+		            	</fieldset>
+		            		<input type="hidden" name="id_noticia" value="${ noticia.id }" >
+		            	<button type="submit" class="btn btn-success pull-right">Comentar</button>
+		            </form>
+		            </div>
 	            </div>
-            </div>
+           </c:if> 
+       
           
             <ul class="">
             <c:forEach items="${ comentarios }" var="comentario">
@@ -257,135 +115,7 @@
               </ul>
           </div>
         </div>
-         <!-- start post pagination -->
-        <nav class="nav-growpop">
-          <a class="prev" href="#">
-            <span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
-            <div>
-              <span>Previous Story</span>
-              <h3>Child full of grace saviour of the human race</h3>
-              <img src="http://lorempixel.com/100/100/" alt="Previous thumb"/>
-            </div>
-          </a>
-          <a class="next" href="#">
-            <span class="icon-wrap"><i class="fa fa-angle-right"></i></svg></span>
-            <div>
-              <span>Next Story</span>
-              <h3>Ancient rulage of grains and the trees of the night</h3>
-              <img src="http://lorempixel.com/100/100/" alt="Next thumb"/>
-            </div>
-          </a>
-        </nav>
-        <!-- End post pagination -->
-        <div class="col-lg-3 col-md-3 col-sm-12">
-          <div class="right_sidebar">
-            <!-- start single widget -->
-            <div class="single_widget">
-              <h2>Popular Post</h2>
-              <ul class="ppost_nav wow fadeInDown">
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                         
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                         
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                      
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>                     
-              </ul>
-            </div><!-- End single widget -->
+     
             <!-- start single widget -->
             <div class="single_widget"> 
               <!-- tab section-->
@@ -406,97 +136,6 @@
                         </div>
                       </div>
                     </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="single_page.html">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="single_page.html">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                          
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="img/70x70.jpg" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>                     
                   </ul>
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="recentComent">
