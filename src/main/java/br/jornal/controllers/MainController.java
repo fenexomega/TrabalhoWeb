@@ -33,8 +33,10 @@ public class MainController {
 	{
 		List<Secao> secoes = secaoDAO.findAll();
 		List<Noticia> noticias = noticiaDAO.findTop20ByAtivaTrueOrderByDataNoticiaDesc();
+		List<Noticia> noticias_destaque = noticiaDAO.findTop5ByAtivaTrueAndEmDestaqueTrueOrderByDataNoticiaDesc();
 		model.addAttribute("secoes", secoes);
 		model.addAttribute("noticias", noticias);
+		model.addAttribute("noticias_destaque",noticias_destaque);
 		return "home";
 	}
 	

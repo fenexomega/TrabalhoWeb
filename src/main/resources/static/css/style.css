@@ -543,10 +543,10 @@ padding: 10px;
   background: none repeat scroll 0 0 white;
   float: left;
   margin: -60px 40px 0;
-  max-width: 100%;
+  max-width: 90%;
   padding: 15px;
   position: relative;
-  width: auto;
+  width: 90%;
 }
 .article_category{
   float: left;  

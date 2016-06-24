@@ -39,10 +39,10 @@ public class Noticia {
 	@JoinColumn(name="id_secao")
 	private Secao secao;
 	
-	@ColumnDefault(value="true")
+	@ColumnDefault(value="1")
 	private boolean ativa;
 	
-	@ColumnDefault(value="false")
+	@ColumnDefault(value="1")
 	private boolean emDestaque;
 	
 	public boolean isEmDestaque() {
