@@ -37,14 +37,16 @@
             <div class="single_widget">
               <h2>Classificados</h2>
               <ul class="post_nav">
+              <c:forEach items="${ classificados }" var="classificado">
                 <li>
                   <figure class="effect-lily">
-                    <a href="single_page.html"><img src="img/270x150x4.jpg" alt="img"></a>
+                    <a href="single_page.html"><img src="images/classificado/${ classificado.id }.png" alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html">Itâs Now An Android World- Feel The Power</a>
+                      <a href="single_page.html"></a>
                     </figcaption>     
                   </figure>
                 </li>
+              </c:forEach>
               </ul>
             </div><!-- End single widget -->
             <!-- start single widget -->
