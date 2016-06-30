@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
           </button>
 		  
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="index.html">Jornal Jornal</a>
           
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -43,10 +43,12 @@
               </ul>
             </li>  --> 
             <li><a href="contact.html">Contact Us</a></li>
-            <c:if test="${ usuario_logado.papel.id == 2 || usuario.logado.papel.id == 3  }">
+            <c:if test="${ usuario_logado.papel.id >= 2 }">
             	<li><a href="/InserirNoticiaFormulario">Nova Notícia</a></li>
             </c:if>
-            
+            <c:if test="${ usuario_logado.papel.id == 3 }">
+            	<li><a href="/InserirClassificadoFormulario">Novo classificado</a></li>
+            </c:if>
           </ul>           
           
           		<c:choose>

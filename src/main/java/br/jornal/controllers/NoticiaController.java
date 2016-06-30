@@ -32,9 +32,6 @@ public class NoticiaController {
 	
 	@Autowired
 	private INoticiasDAO noticiasDAO;
-
-	@Autowired
-	private ServletContext servletContext;
 	
 	@Autowired
 	private ISecaoDAO secaoDAO;
@@ -42,6 +39,8 @@ public class NoticiaController {
 	@Autowired
 	private IComentarioDAO comentarioDAO;
 
+	@Autowired
+	private ServletContext servletContext;
 	
 	@RequestMapping("/InserirNoticiaFormulario")
 	public String insertNoticiaFormulario(Model model)
@@ -69,8 +68,8 @@ public class NoticiaController {
 		
 		if(imagem != null && imagem.isEmpty() == false)
 		{
-			String pathname = servletContext.getRealPath("/") + "images/noticia/" + noticia.getId() + ".png";
-			AulaFileUtil.saveImage(pathname, imagem);
+			String pathname = "images/noticia/" + noticia.getId() + ".png";
+			AulaFileUtil.saveImage(servletContext ,pathname, imagem);
 		}
 		return "redirect:/";
 	}

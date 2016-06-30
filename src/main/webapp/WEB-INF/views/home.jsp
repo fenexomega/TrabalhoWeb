@@ -40,7 +40,7 @@
               <c:forEach items="${ classificados }" var="classificado">
                 <li>
                   <figure class="effect-lily">
-                    <a href="single_page.html"><img src="images/classificado/${ classificado.id }.png" alt="img"></a>
+                    <a href="single_page.html"><img src="images/classificado/${ classificado.id }.png"  alt="img"></a>
                     <figcaption>
                       <a href="single_page.html"></a>
                     </figcaption>     
@@ -64,96 +64,6 @@
                   </div>
                 </li>
                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                      
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="img/70x70.jpg" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>                     
               </ul>
             </div><!-- End single widget -->
           </div>

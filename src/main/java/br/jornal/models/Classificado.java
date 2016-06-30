@@ -17,12 +17,17 @@ public class Classificado {
 	@Column(nullable=false)
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
+	@Column(nullable=false)
 	private String titulo;
+	@Column(columnDefinition="TEXT",nullable=false)
 	private String texto;
+	@Column(nullable=false)
 	private float preco;
+	@Column(nullable=false)
 	private String telefone;
+	@Column(nullable=false)
 	private float melhor_oferta;
-	private Date data_oferta;
+	private Date dataOferta;
 	
 	@ManyToOne(optional=false)
 	@JoinColumn(name="id_autor")
@@ -65,10 +70,10 @@ public class Classificado {
 		this.melhor_oferta = melhor_oferta;
 	}
 	public Date getData_oferta() {
-		return data_oferta;
+		return dataOferta;
 	}
 	public void setData_oferta(Date data_oferta) {
-		this.data_oferta = data_oferta;
+		this.dataOferta = data_oferta;
 	}
 	
 	public Usuario getAutor() {

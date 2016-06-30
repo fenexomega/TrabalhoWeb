@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,8 +66,8 @@ public class UsuarioController {
 		//salvar imagem
 		if(imagem != null)
 		{
-			String pathname = servletContext.getRealPath("/") + "images/usuario/" + usuario.getId() + ".png";
-			AulaFileUtil.saveImage(pathname, imagem);
+			String pathname = "images/usuario/" + usuario.getId() + ".png";
+			AulaFileUtil.saveImage(servletContext,pathname, imagem);
 		}
 
 

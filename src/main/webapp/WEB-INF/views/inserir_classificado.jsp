@@ -8,32 +8,38 @@
 <%@include file="common/metatags.jsp" %>
 </head>
 <body>
-	<form action="" method="post" enctype="">
-		<fieldset class="form-control">
-			<label>Título</label>
-			<input type="text" name="titulo">
-		</fieldset>
-		<fieldset class="form-control">
-			<label>Texto</label>
-			<input type="text" name="texto">
-		</fieldset>
-		<fieldset class="form-control">
-			<label>Telefone</label>
-			<input type="text" name="telefone">
-		</fieldset>
-		<fieldset class="form-control">
-			<label>Preço Inicial</label>
-			<input type="number" name="preco">
-		</fieldset>
-		<fieldset>
-			<label>Foto</label>
-			
-		</fieldset>
-		<div class="row pull-right">
-			<a class="btn btn-danger  col-md4" href="/" >Cancelar</a>
-			<input class="btn btn-primary col-md4" type="submit" value="Confirmar">			
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<form action="/InserirClassificado" method="post" enctype="multipart/form-data">
+				<fieldset class="form-group">
+					<label>Título</label>
+					<input type="text" class="form-control" name="titulo">
+				</fieldset>
+				<fieldset class="form-group">
+					<label>Texto</label>
+					<textarea rows="20"  style="width: 100%;" name="texto"  ></textarea>
+				</fieldset>
+				<fieldset class="form-group">
+					<label>Telefone</label>
+					<input type="text" class="form-control" name="telefone">
+				</fieldset>
+				<fieldset class="form-group">
+					<label>Preço Inicial</label>
+					<input type="number" class="form-control" name="preco">
+				</fieldset>
+				<fieldset>
+					<label>Foto</label>
+					<input type="file" name="photo">
+				</fieldset>
+				<div class="row pull-right">
+					<a class="btn btn-danger  col-md4" href="/" >Cancelar</a>
+					<input class="btn btn-primary col-md4" type="submit" value="Confirmar">			
+				</div>
+			</form>
 		</div>
-	</form>
+		
+	</div>
+	
 
 </body>
 </html>

@@ -8,6 +8,6 @@ import br.jornal.models.Classificado;
 
 public interface IClassificadoDAO extends JpaRepository<Classificado, Long>
 {
-	List<Classificado> findTop5OrderByData_ofertaDesc();
+	List<Classificado> findTop5ByOrderByDataOfertaDesc();
 
 }

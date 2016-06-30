@@ -1,5 +1,6 @@
 package br.jornal.controllers;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,8 @@ public class ClassificadoController
 	@Autowired
 	IClassificadoDAO classificadoDAO;
 	
-	
+	@Autowired
+	private ServletContext servletContext;
 	
 	
 	@RequestMapping("/Classificado")
@@ -40,18 +42,22 @@ public class ClassificadoController
 	public String inserirClassificado(String titulo,String texto, MultipartFile photo, float preco, String telefone,
 			HttpServletRequest request)
 	{
-		Usuario usuario = (Usuario) request.getAttribute("usuario_logado");
+		Usuario usuario = (Usuario) request.getSession().getAttribute("usuario_logado");
 		Classificado classificado = new Classificado();
 		classificado.setTitulo(titulo);
 		classificado.setTexto(texto);
 		classificado.setPreco(preco);
 		classificado.setTelefone(telefone);
 		classificado.setAutor(usuario);
+		if(usuario == null)
+		{
+			throw new RuntimeException("[ERRO] Não há usuário logado em inserção de classificado.");
+		}
 		classificado = classificadoDAO.save(classificado);
+		String filetype = photo.getOriginalFilename().split("\\.")[1];
 		
+		AulaFileUtil.saveImage(servletContext,"images/classificado/" + classificado.getId() + "." + filetype, photo);
 		
-		AulaFileUtil.saveImage("image/classificado/" + classificado.getId() + ".png", photo);
-		
-		return "";
+		return "redirect:/";
 	}
 }
