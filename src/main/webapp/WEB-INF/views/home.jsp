@@ -40,7 +40,7 @@
               <c:forEach items="${ classificados }" var="classificado">
                 <li>
                   <figure class="effect-lily">
-                    <a href="single_page.html"><img src="images/classificado/${ classificado.id }.png"  alt="img"></a>
+                    <a href="/VisualizarClassificado?id=${ classificado.id }"><img src="images/classificado/${ classificado.id }.png"  alt="img"></a>
                     <figcaption>
                       <a href="single_page.html"></a>
                     </figcaption>     

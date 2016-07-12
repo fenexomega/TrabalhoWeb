@@ -28,7 +28,8 @@ public class AutorizadorInterceptor extends HandlerInterceptorAdapter {
 			uri.startsWith("/MostrarNoticia")||
 			uri.endsWith("error") ||
 			uri.endsWith("CadastrarUsuario") ||
-			uri.startsWith("/FormularioLogin"))
+			uri.startsWith("/FormularioLogin") ||
+			uri.startsWith("/VisualizarClassificado"))
 			return true;
 		
 		

@@ -60,4 +60,13 @@ public class ClassificadoController
 		
 		return "redirect:/";
 	}
+	
+	@RequestMapping("/VisualizarClassificado")
+	public String visualizarClassificado(long id,Model model)
+	{
+		Classificado classificado = classificadoDAO.findOne(id);
+		model.addAttribute("classificado",classificado);
+		
+		return "visualizar_classificado";
+	}
 }
