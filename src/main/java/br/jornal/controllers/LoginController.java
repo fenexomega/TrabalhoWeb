@@ -1,5 +1,6 @@
 package br.jornal.controllers;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class LoginController
 	}
 	
 	@RequestMapping(value="/login",method=RequestMethod.POST)
-	public String login(LoginForm form, HttpSession session)
+	public String login(LoginForm form, HttpSession session,HttpServletRequest request)
 	{
 		String login = form.getLogin();
 		String senha = form.getSenha();
@@ -44,7 +45,7 @@ public class LoginController
 			return "redirect:/FormularioLogin";
 
 				
-		return "redirect:/";
+		return "redirect:" + request.getRequestURI() ;
 	}
 	
 	@RequestMapping("/logout")

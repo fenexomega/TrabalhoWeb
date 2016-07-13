@@ -42,7 +42,7 @@
                   <figure class="effect-lily">
                     <a href="/VisualizarClassificado?id=${ classificado.id }"><img src="images/classificado/${ classificado.id }.png"  alt="img"></a>
                     <figcaption>
-                      <a href="single_page.html"></a>
+                      <a href="/VisualizarClassificado?id=${ classificado.id }">${ classificado.titulo } - R$ ${ classificado.preco }</a>
                     </figcaption>     
                   </figure>
                 </li>

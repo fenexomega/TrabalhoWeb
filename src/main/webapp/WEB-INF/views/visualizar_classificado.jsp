@@ -14,27 +14,44 @@
 </head>
 <body>
 	<%@include file="common/navbar.jsp" %>
-  <section id="content">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-4">
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4">
-					<h1>${ classificado.titulo }</h1>
-					<img alt="" src="images/classificado/${ classificado.id }.png">
-					<div class="single_content" id="classificado-text" >
+	  <section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-4">
 					</div>
-			
+					<div class="col-lg-3 col-md-3 col-sm-4">
+						<h1>${ classificado.titulo }</h1>
+						<img alt="" src="images/classificado/${ classificado.id }.png">
+						<h2>Preço: R$ ${ classificado.preco }</h2>
+						<small>Último lance por: ${ classificado.autor.nome }</small>
+						<div class="single_content" style="background: #EEE" id="classificado-text" >
+							
+						</div>
+						<c:if test="${ usuario_logado != null }">
+							<form action="/SubmeterOferta">
+								<input type="hidden" name="id_classificado" value="${ classificado.id }">
+								<fieldset class="form-control">
+									<label>Preço da sua oferta</label>
+									<input name="preco" type="text" value="${ classificado.preco + 1 }" />
+								</fieldset>
+								<button type="submit" class="btn btn-primary pull-right">Submeter</button>
+							</form>
+						</c:if>
 					
-		              
-				
+					</div>
 				</div>
+				
+				
 			</div>
-			
-			
-		</div>
 	</section>
 	
 	<%@include file="common/end_scripts.jsp" %>
+	<script type="text/javascript" >
+	  	var converter = new showdown.Converter();
+	  	var text = "${classificado.texto}"
+	  	var html = converter.makeHtml(text);
+	  	console.log("LOG: " + html);
+	  	document.getElementById("classificado-text").innerHTML = html;
+  </script>
 </body>
 </html>

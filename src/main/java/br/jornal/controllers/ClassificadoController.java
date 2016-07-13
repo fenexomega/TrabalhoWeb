@@ -1,5 +1,7 @@
 package br.jornal.controllers;
 
+import java.util.regex.Matcher;
+
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
@@ -45,6 +47,7 @@ public class ClassificadoController
 		Usuario usuario = (Usuario) request.getSession().getAttribute("usuario_logado");
 		Classificado classificado = new Classificado();
 		classificado.setTitulo(titulo);
+		texto = texto.replaceAll("\\r\\n|\\r|\\n",Matcher.quoteReplacement("\\n\\n"));
 		classificado.setTexto(texto);
 		classificado.setPreco(preco);
 		classificado.setTelefone(telefone);
@@ -68,5 +71,21 @@ public class ClassificadoController
 		model.addAttribute("classificado",classificado);
 		
 		return "visualizar_classificado";
+	}
+	
+	@RequestMapping("/SubmeterOferta")
+	public String submeterOferta(long id_classificado, float preco, HttpServletRequest request,
+			Model model)
+	{
+		Classificado classificado = classificadoDAO.findOne(id_classificado);
+		Usuario usuario = (Usuario) request.getSession().getAttribute("usuario_logado");
+		
+		if(classificado.getPreco() < preco)
+		{
+			classificado.setAutor(usuario);
+			classificado.setPreco(preco);
+			classificadoDAO.save(classificado);
+		}
+		return "redirect:/VisualizarClassificado?id=" + id_classificado;
 	}
 }

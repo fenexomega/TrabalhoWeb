@@ -17,7 +17,7 @@
 				</fieldset>
 				<fieldset class="form-group">
 					<label>Texto</label>
-					<textarea rows="20"  style="width: 100%;" name="texto"  ></textarea>
+					<textarea rows="20"  style="width: 100%;" type="text" name="texto"  ></textarea>
 				</fieldset>
 				<fieldset class="form-group">
 					<label>Telefone</label>
